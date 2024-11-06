@@ -8,6 +8,8 @@ headers = ["Manufacturer", "Category", "Screen", "GPU", "OS", "CPU_core", "Scree
 data = pd.read_csv(url, header = None)
 df = pd.DataFrame(data)
 df.columns = headers
+
+#Replace
 df.replace('?',np.nan, inplace = True)
 
 #Add headers
